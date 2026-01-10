@@ -23,13 +23,12 @@
       <div class="nav-logo" style="display: flex">
         <!-- <img src="117-.png" style="height: 80px ;padding-left: 7px;" alt="House Project" /> -->
         <a href="index.html">
-        <img
-          src="h1.png"
-          style="height: 75px; padding-left: 7px"
-          alt="House Project"
+          <img
+            src="h1.png"
+            style="height: 75px; padding-left: 7px"
+            alt="House Project"
         /></a>
       </div>
-      
 
       <ul class="nav-links">
         <li class="nav-item">
@@ -75,55 +74,41 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       />
       <div class="k">
+        <button id="ai-chat-button" class="nav-ai-btn">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Ask AI</span>
+        </button>
 
-      <button id="ai-chat-button" class="nav-ai-btn">
-        <i class="fa-solid fa-wand-magic-sparkles"></i>
-        <span>Ask AI</span>
-      </button>
-
-      <div id="ai-chat-window" class="ai-chat-closed">
-        <div class="ai-chat-header">
-          <span><i class="fa-solid fa-robot"></i> Personal Assistant</span>
-          <button id="close-ai">&times;</button>
-        </div>
-        <div id="ai-chat-messages">
-          <div class="ai-msg">
-            Hi! I'm your personal assistant. How can I help you with your doubts today?
+        <div id="ai-chat-window" class="ai-chat-closed">
+          <div class="ai-chat-header">
+            <span><i class="fa-solid fa-robot"></i> Personal Assistant</span>
+            <button id="close-ai">&times;</button>
+          </div>
+          <div id="ai-chat-messages">
+            <div class="ai-msg">
+              Hi! I'm your personal assistant. How can I help you with your
+              doubts today?
+            </div>
+          </div>
+          <div class="ai-chat-input">
+            <input
+              type="text"
+              id="ai-input"
+              placeholder="Type your doubt here..."
+            />
+            <button id="ai-send-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
           </div>
         </div>
-        <div class="ai-chat-input">
-          <input
-            type="text"
-            id="ai-input"
-            placeholder="Type your doubt here..."
-          />
-          <button id="ai-send-btn">
-            <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </div>
       </div>
-      </div>
-      <div class="search-bar" style="margin-left: auto">
+      <div class="search-bar">
         <input type="text" placeholder="Search…" />
         <button aria-label="Search">🔍</button>
       </div>
       <div class="auth-buttons" id="authButtons">
-        <button class="btn signup">
-          <a
-            href="signup.html"
-            onclick="loginSuccess()"
-            style="color: aliceblue; font-weight: 200px"
-            >Sign Up</a
-          >
-        </button>
-        <button class="btn signin">
-          <a
-            href="signin.html"
-            onclick="loginSuccess()"
-            style="color: aliceblue; font-weight: 200px"
-            >Sign In</a
-          >
-        </button>
+        <a href="signup.html" class="btn signup">Sign Up</a>
+        <a href="signin.html" class="btn signin">Sign In</a>
       </div>
 
       <div class="ico" id="userIcons" style="display: none; gap: 10px">
@@ -159,7 +144,6 @@
         <div class="carousel-item active">
           <video class="d-block w-100" autoplay muted loop playsinline>
             <source src="v1.mp4" type="video/mp4" />
-            
           </video>
 
           <div class="carousel-caption d-none d-md-block">
@@ -171,7 +155,6 @@
         <div class="carousel-item active">
           <video class="d-block w-100" autoplay muted loop playsinline>
             <source src="v2.mp4" type="video/mp4" />
-            
           </video>
 
           <div class="carousel-caption d-none d-md-block">
@@ -182,7 +165,6 @@
         <div class="carousel-item active">
           <video class="d-block w-100" autoplay muted loop playsinline>
             <source src="v1.mp4" type="video/mp4" />
-            
           </video>
 
           <div class="carousel-caption d-none d-md-block">
@@ -190,7 +172,6 @@
             <p>Everything you need in one platform</p>
           </div>
         </div>
-
       </div>
       <button
         class="carousel-control-prev"

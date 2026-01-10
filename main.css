@@ -21,6 +21,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.k{
+  padding-left: 170px;
+}
 
 /* Sign In Button */
 .signin {
@@ -466,9 +469,9 @@ body {
     transform: translateY(20px);
     pointer-events: none;
 }
-.k{
+/* .k{
   padding-left: 160px;
-}
+} */
 /* Header & Messages */
 .ai-chat-header { background: #7D1C4A; color: white; padding: 12px; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; }
 #ai-chat-messages { height: 350px; overflow-y: auto; padding: 15px; display: flex; flex-direction: column; gap: 10px; }

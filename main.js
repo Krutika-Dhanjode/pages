@@ -117,3 +117,9 @@ input.addEventListener("keydown", (e) => {
     askGemini();
   }
 });
+window.onload = () => {
+  if (localStorage.getItem("loggedIn") === "true") {
+    document.getElementById("authButtons").style.display = "none";
+    document.getElementById("userIcons").style.display = "flex";
+  }
+};
